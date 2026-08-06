@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Rae</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="videos/columbina-blue-flower-fields-genshin-impact-moewalls-com.mp4" type="video/mp4">
+  </video>
+  <!-- INSTRUCTION POPUP -->
+<div class="instruction-popup active" id="instructionPopup">
+  <h3>NOTE!!</h3>
+  <p>
+    • Click on lumine first<br> 
+    • Select each one of them, you could go in any order but I'll suggest this one:<br>
+       1.Scara<br>
+       2.Neuv&Furina<br>
+       3.Xiao<br>
+       4.Kazhua<br>
+    • Each of one them shows different things, once you complete comeback to this page again select each one as i suggested in the order or whichever you want to!<br> 
+    • Take your time and enjoy >.<
+  </p>
+  <button onclick="closeInstructions()">Got it</button>
+</div>
+
+<!-- INFO ICON (top center) -->
+<div class="instruction-icon" id="instructionIcon" onclick="openInstructions()">
+  ℹ️
+</div>
+
+
+  <div class="menu-wrapper">
+
+    <!-- Center Image -->
+    <img
+      src="images/luminepic.png"
+      class="center-img"
+      onclick="toggleOrbit()"
+      alt="Center"
+    />
+
+    <!-- Orbit -->
+    <div class="orbit rotating" id="orbit">
+
+      <div class="icon-wrap" data-link="poem.html">
+        <div class="icon-content">
+          <img src="images/kazuhapic.png" class="icon-img">
+          <span class="icon-label" style="color: lavenderblush; font-size: 15px;">Foryou!!</span>
+        </div>
+      </div>
+
+      <div class="icon-wrap" data-link="thingswedid.html">
+        <div class="icon-content">
+          <img src="images/scarapic.png" class="icon-img">
+          <span class="icon-label" style="color:lavenderblush; font-size: 15px;">Uss!</span>
+        </div>
+      </div>
+
+      <div class="icon-wrap" data-link="message.html">
+        <div class="icon-content">
+          <img src="images/xiaopic.png" class="icon-img">
+          <span class="icon-label">😋</span>
+        </div>
+      </div>
+
+      <div class="icon-wrap" data-link="aboutus.html">
+        <div class="icon-content">
+          <img src="images/nfpic.png" class="icon-img">
+          <span class="icon-label" style="color: lavenderblush; font-size: 15px;">Hehe!</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

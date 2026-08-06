@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(180deg,#0f2027,#203a43,#2c5364);
+  color: #fff;
+  font-size: larger;
+}
+
+/* Page title */
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+/* Vertical line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Timeline items: full width container */
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin: 80px 0;
+  z-index: 2;
+}
+
+/* LEFT ITEM: left 50% for image + text */
+.timeline-item.left {
+  justify-content: flex-start;
+}
+
+.timeline-item.left .image {
+  width: 45%;
+  margin-right: 5%; /* gap to center line */
+}
+
+.timeline-item.left .text {
+  width: 45%;
+  text-align: right;
+}
+
+/* RIGHT ITEM: right 50% for image + text */
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+.timeline-item.right .image {
+  width: 45%;
+  margin-left: 5%; /* gap to center line */
+}
+
+.timeline-item.right .text {
+  width: 25%;
+  text-align: auto;
+}
+
+/* Images */
+.timeline-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Text */
+.timeline-item h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+  .timeline {
+    padding: 0 20px;
+  }
+  .timeline-line {
+    left: 20px;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeline-item.left .image,
+  .timeline-item.right .image {
+    width: 100%;
+    margin: 0 0 12px 0;
+  }
+  .timeline-item.left .text,
+  .timeline-item.right .text {
+    width: 100%;
+    text-align: left;
+  }
+}

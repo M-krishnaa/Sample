@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you!!</title>
+    <link rel="stylesheet" href="poem.css">
+</head>
+<body>
+<!-- ENTRY POPUP -->
+<div class="entry-overlay" id="entryOverlay">
+  <div class="entry-popup">
+    <p>
+      Place your cursor inside the frame to see!
+    </p>
+    <button onclick="closeEntryPopup()">Continue</button>
+  </div>
+</div>
+
+    <div class="stars"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="container">
+  <div class="card">
+    <div class="image image1"></div>
+    <div class="info">
+      <h2>My Dear Rae</h2>
+      <p>It was a winter breeze,
+I still remember the moment<br>
+I stepped into your world<br>
+and became a part of it.<br>
+The laughs we shared,<br>
+the moments we shared,<br>
+the comfort we found—<br>
+everything was, and still is, beautiful.<br>
+If you asked me to do it again,<br>
+I’d gladly relive it all.<br>
+Let’s continue our journey,<br>
+through every winter breeze<br>
+we began with</p>
+  </div>
+<svg>
+  <filter id="wavy1">
+    <feturbulence x="0" y="0" baseFrequency="0.2" numOctaves="5" seed="1"></feturbulence>
+    <feDisplacementMap in="SourceGraphic" scale="20" />
+  </filter>
+</svg>
+<svg>
+  <filter id="wavy2">
+    <feturbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feturbulence>
+    <feDisplacementMap in="SourceGraphic" scale="20" />
+  </filter>
+</svg>
+<svg>
+  <filter id="wavy3">
+    <feturbulence x="0" y="0" baseFrequency="0.1" numOctaves="5" seed="1"></feturbulence>
+    <feDisplacementMap in="SourceGraphic" scale="20" />
+  </filter>
+</svg>
+<script src="poem.js"></script>
+</body>
+</html>
